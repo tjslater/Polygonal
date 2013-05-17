@@ -1,0 +1,21 @@
+<html>
+<head>
+<script src="js/lib/underscore.js"></script>
+<script src="js/lib/backbone.js"></script>
+<script data-main="js/app.js" src="js/lib/require.js"></script>
+<script>
+require.config({
+urlArgs: "bust=" +  (new Date()).getTime()
+	});
+</script>
+
+<style>
+canvas {
+	border: 1px gray dashed;
+}
+</style>
+	</head>
+	<body style="margin:0">
+		<canvas width='800' height='600' id="canvas"></canvas>
+	</body>
+	</html>
